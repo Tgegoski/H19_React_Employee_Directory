@@ -10,7 +10,7 @@ As a user, I want to be able to view my entire employee directory at once so tha
 
 ## Acceptance Criteria
 
-Generates a table of random users utilizing the Random User API so that when the user loads the page a table of employees should render. The user should be able to sort the able by at least one category and filter users by at least one property.
+Generates a table of random users utilizing the Random User API so that when the user loads the page a table of employees should render. The user should be able to sort the table by at least one category and filter users by at least one property.
 
 ## Demo
 
