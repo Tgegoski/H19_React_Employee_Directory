@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import Card from "../components/Card";
+import Card from "../components/Employees";
 import Alert from "../components/Alert";
 
 class Discover extends Component {
