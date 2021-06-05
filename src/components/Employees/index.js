@@ -1,21 +1,21 @@
 import React from "react";
-import CardBtn from "../CardBtn";
+import SearchForm from "../SearchForm";
 import "./style.css";
 
-function Card(props) {
+function Employees(props) {
   return (
     <div
-      className="card"
+      className="employees"
       style={{
         backgroundImage: props.image ? `url(${props.image})` : "none"
       }}
     >
       {!props.image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
-      <CardBtn
+      <SearchForm
         onClick={props.handleBtnClick}
         data-value="pass"
       />
-      <CardBtn
+      <SearchForm
         onClick={props.handleBtnClick}
         data-value="pick"
       />
@@ -23,4 +23,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default Employees;
