@@ -12,13 +12,13 @@ class Search extends Component {
     departments: [],
     results: [],
     error: ""
-  };
+  }
 
   componentDidMount() {
     API.getEmployeeList()
       .then(res => this.setState({ employees: res.data.message }))
       .catch(err => console.log(err));
-  };
+  }
 
   handleInputChange = event => {
     this.setState({ search: event.target.value });
@@ -34,7 +34,7 @@ class Search extends Component {
         this.setState({ results: res.data.message, error: "" });
       })
       .catch(err => this.setState({ error: err.message }));
-  };
+  }
   render() {
     return (
       <div>
@@ -55,7 +55,7 @@ class Search extends Component {
         </Container>
       </div>
     )
-  };
+  }
 }
 handleFormSubmit = event => {
   event.preventDefault();
@@ -87,7 +87,7 @@ handleFormSubmit = event => {
         <SearchResults results={this.state.results} />
       </Container>
     </div>
-    );
+    )
     
   }
 
